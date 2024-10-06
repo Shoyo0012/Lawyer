@@ -1,0 +1,72 @@
+.services2{
+ padding: 7rem;
+ background: $white;
+ .services-inner{
+ padding: 2rem;
+ .heading-wrap{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 4rem;
+  .heading{
+   flex-basis: 56%;
+   h2{
+    font-size: 50px;
+    color: $black;
+    margin-bottom: 20px;
+   }
+  }
+  .cta-btns{
+   .btn-primary{
+    margin-top: 55px;
+    margin-left: 1rem;
+    font-size: 14px;
+    font-weight: 600;
+    color: $white;
+    padding: 15px 30px 15px 30px;
+    background: $black;
+    
+    &:hover{
+     background-color: $secondary;
+     color: $black;
+    }
+   }
+  }
+
+ }
+ .info-wrap{
+  display: flex;
+  justify-content: space-between;
+  .info-item{
+   flex-basis: 30%;
+   .icon,h3,p{
+    margin-bottom: 30px;
+   }
+   h3{
+    color: $black;
+   }
+   .icon{
+    position: relative;
+    z-index: 10;
+    img{
+     position: relative;
+     z-index: 5;
+    }
+    &::after{
+     content: "";
+     width: 40px;
+     height: 40px;
+     border-radius: 50%;
+     background: $secondary;
+     position: absolute;
+     left: 40px;
+     top: 20px;
+     z-index: 1;
+    }
+   }
+  }
+ }
+
+
+ }
+}
+

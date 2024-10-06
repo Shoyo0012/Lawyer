@@ -1,0 +1,91 @@
+.hero-section{
+ padding: 10rem 0 15rem 0;
+ .hero-inner{
+  position: relative;
+  max-width: 900px;
+  max-height: 500px;
+  display: flex;
+  margin: 0 auto;
+  justify-content: start;
+  
+  .text-wrap{
+   max-width: 550px;
+   z-index: 10;
+   h3{
+    font-size: 60px;
+    font-weight: 700;
+    color: $white;
+    margin-bottom: 30px;
+   }
+   p{
+    margin-bottom: 30px;
+    font-size: 17px;
+    max-width: 450px;
+   }
+
+
+
+  }
+  .img-wrap{
+   &::before {
+    content: "";
+    position: absolute;
+    height: 600px;
+    width: 400px; 
+   top: -170px;
+   right: 30px;
+    border: 1px solid $dark; 
+    border-radius: 200px 200px 0 0; 
+    z-index: -1; 
+  }
+  &::after{
+    content: "";
+    position: absolute;
+    height: 600px;
+    width: 400px;
+    top: -100px;
+    left: 390px;
+    border: 1px solid $secondary; 
+    border-radius:200px 200px 0 0; 
+    z-index: -1;
+  }
+   .hero-img{
+    position: absolute;
+   object-fit: cover;
+    height: 600px;
+    width: 400px;
+    top: -140px;
+    left: 48%;
+    border-radius: 190px 190px 0px 0px;
+
+
+   }
+  }
+ }
+}
+
+.cta-btns{
+ .btn-primary{
+  background-color: $secondary;
+  color: $dark;
+  padding: 14px 20px 14px 20px;
+  border: 1px solid transparent;
+  text-transform: capitalize;
+  &:hover{
+   color: white;
+   border-color:$white;
+   background: transparent;
+  } 
+ }
+ .btn-link{
+  color: $white-opacity-80;
+  font-size: 18px;
+  font-family: $font-family1;
+  text-decoration: none;
+  &:hover{
+   color: $white-opacity-50;
+   text-decoration: underline;
+   text-underline-offset: 4px;
+  }
+ }
+ }

@@ -1,0 +1,140 @@
+.whyus-section{
+ padding: 2rem 0 12rem 0;
+ position: relative;
+ background-color: $white;
+
+ .services-inner{
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+
+  .img-wrap{
+   flex-basis: 45%;
+   left: 0;
+   position: relative;
+   &::before{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    border-radius: 0 0 250px 250px;
+    border:1px solid rgb(145, 145, 145);
+    bottom: -30px;
+    left: -30px;
+    z-index: 1;
+   }
+   &::after{
+     position: absolute;
+     content: "";
+     width: 100%;
+     height: 100%;
+     border-radius: 0 0 250px 250px;
+     border:1px solid rgb(196, 196, 196);
+     top: -30px;
+    right: -30px;
+     z-index: 1;
+    
+   }
+   .years-experience{
+    z-index: 3;
+    padding: 17px 30px 10px 30px;
+    position: absolute;
+    left: -80px;
+    top: 80px;
+    background: $primary;
+    border-radius: 26px;
+    line-height: 26px;
+    box-shadow: 0 15px 30px -10px rgb(81, 81, 81);
+    span{
+     text-transform: capitalize;
+     color: white;
+     font-size: 18px;
+    }
+    strong{
+     font-size: 38px;
+     color: white;
+     margin-right: 10px;
+    }
+   }
+   img{
+    z-index: 2;
+    position: relative;
+    width: 100%;
+    height: 588px;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 0 0 250px 250px;
+   }
+   .rate-success{
+    z-index: 3;
+    padding: 17px 30px 10px 30px;
+    position: absolute;
+    right: -80px;
+    bottom: 80px;
+    background: $secondary;
+    border-radius: 26px;
+    line-height: 32px;
+    box-shadow: 0 15px 30px -10px rgb(81, 81, 81);
+    span{
+     text-transform: capitalize;
+     color: black;
+     font-size: 18px;
+    }
+    strong{
+     font-size: 38px;
+     color: rgba(36, 36, 36, 0.958);
+     margin-right: 10px;
+     display: block;
+     
+    }
+   }
+
+  }
+
+
+
+
+  .text-wrap{
+   flex-basis: 45%;
+  .text-wrap-inner{
+   h2,p,ul{
+    margin-bottom: 30px;
+   }
+   h2{
+    text-transform: capitalize;
+    font-size: 50px;
+    color: $black;
+   }
+  
+   ul{
+    
+    li{
+     white-space: nowrap;
+     position: relative;
+     text-transform: capitalize;
+     font-size: 17px;
+     color: $black;
+     width: 45%;
+     margin-bottom: 10px;
+     display: inline-block;
+     &::before{
+     content: "";
+     position: absolute;
+     left: -20px;
+     top: 0.3rem;
+     background-image: url(/images/img/star.svg);
+     background-size: contain;
+     width: 13px;
+     height: 13px;
+     }
+    }
+   }
+
+
+
+
+  }
+  }
+ }
+}
