@@ -72,31 +72,29 @@
 
 //---swiper--------
 
-$(function () {
+document.addEventListener('DOMContentLoaded', function() {
 
- var swiperinit = function() {
-   new Swiper('.testimonialSwiper' ,{
-    loop: true,
-    slidesPerView: 1,
-    speed: 700,
-    spaceBetween: 20,
-    navigation: {
-      nextEl: '.custom-swiper-button-next',
-      prevEl: '.custom-swiper-button-prev',
-    },
-    pagination: {
-    el:".swiper-pagination",
-    clickable: true,
-    }
-
-
-   });
-
+  var swiperinit = function() {
+    new Swiper('.testimonialSwiper', {
+      loop: true,
+      slidesPerView: 1,
+      speed: 700,
+      spaceBetween: 20,
+      navigation: {
+        nextEl: '.custom-swiper-button-next',
+        prevEl: '.custom-swiper-button-prev',
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      }
+    });
   };
- swiperinit();
 
+  swiperinit();
 
 });
+
 
 
 
